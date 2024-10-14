@@ -1,0 +1,131 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#nav {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+
+#rnav {
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#rnav a {
+  margin-right: 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#left #textcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#rnav i {
+  color: royalblue;
+}
+
+#left {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+#textcenter h1 {
+  font-size: 90px;
+  font-weight: 800;
+}
+
+#textcenter p {
+  opacity: 0.6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+#textcenter a {
+  text-decoration: none;
+  color: #00000084;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid #00000084;
+}
+
+.fa-solid fa-arrow-left {
+  color: black;
+}
+
+#right {
+  width: 60%;
+  height: 100%;
+}
+
+#right-bottom {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://images.unsplash.com/photo-1487700160041-babef9c3cb55?q=80&w=2052&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+#right-top {
+  width: 100%;
+  height: 50%;
+  background-color: red;
+  display: flex;
+}
+
+#rtop-left {
+  width: 55%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1551888419-7b7a520fe0ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+#rtop-right {
+  width: 45%;
+  height: 100%;
+  background-image: url(https://img.freepik.com/free-photo/top-view-delicious-orange-slice_23-2148545985.jpg?t=st=1727889130~exp=1727892730~hmac=90ec5c3593c1c04705be938322163e99908f8b8978cff25d919031668a98cfbb&w=740);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 500px) {
+  * {
+    margin: 0;
+  }
+  #main {
+    flex-direction: column;
+  }
+  #main #left {
+    width: 100%;
+  }
+  #main #right {
+    width: 100%;
+  }
+}
